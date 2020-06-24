@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!--ToDo Setup 5: Add MyApplication to your Manifest-->
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
