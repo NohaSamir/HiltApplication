@@ -1,15 +1,13 @@
 package com.noha.hiltapplication
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 
-//ToDo 3 : Add @AndroidEntryPoint to Activity that hold our fragment
-// Hilt Fragments must be attached to an @AndroidEntryPoint Activity.
+//ToDo 2 : Add @AndroidEntryPoint to MainActivity that FirstFragment attached to it
+// if you annotate a fragment, then you must also annotate any activities where you use that fragment.
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 

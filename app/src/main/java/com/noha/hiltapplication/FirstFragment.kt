@@ -12,12 +12,12 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_first.*
 import javax.inject.Inject
 
-//ToDo 2: Add @AndroidEntryPoint To inject fields in Fragment
+//ToDo 1: Add @AndroidEntryPoint To inject fields in Fragment
 @AndroidEntryPoint
 class FirstFragment : Fragment() {
 
-    //ToDo 1: To inject a new instance of Car
-    // first add inject annotation before filed then tell Hilt how to create instance
+    //ToDo 3: To inject a new instance of Car
+    // use the @Inject annotation to perform field injection
     @Inject
     lateinit var car: Car
 
@@ -33,6 +33,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //ToDo 6 : use you car instance
         textview_first.text = car.start()
 
         Glide.with(context)
@@ -41,3 +42,6 @@ class FirstFragment : Fragment() {
 
     }
 }
+
+//ToDo 7 : Run your app
+// Congratulation: Now you learn how to inject fields using Hilt
