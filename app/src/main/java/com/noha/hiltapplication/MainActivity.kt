@@ -6,8 +6,6 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 
-//ToDo 2 : Add @AndroidEntryPoint to MainActivity that FirstFragment attached to it
-// if you annotate a fragment, then you must also annotate any activities where you use that fragment.
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
